@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "vows test/* --spec"
+	"start" : "node index.js"
+    "test" : "vows test/* --spec"
   },
   "author": "",
   "license": "ISC",
