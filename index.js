@@ -16,6 +16,6 @@ app.get('/calc', function(request, response) {
   response.send('Rand from ' + a + ' to ' + b + ' => ' + my_math.GetRandomNInRange(a, b));
 });
 
-app.listen(3000, function () {
+app.listen(80, function () {
   console.log('App listening on port 3000!');
 })
