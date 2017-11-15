@@ -3,6 +3,8 @@ var app = express();
 
 var my_math = require('./lib/my_math');
 
+var port = process.env.PORT || 3000;
+
 app.get('/', function (req, res) {
   res.send('Hello World! You can use');
 });
@@ -16,6 +18,6 @@ app.get('/calc', function(request, response) {
   response.send('Rand from ' + a + ' to ' + b + ' => ' + my_math.GetRandomNInRange(a, b));
 });
 
-app.listen(80, function () {
-  console.log('App listening on port 3000!');
+app.listen(port, function () {
+  console.log('App listening on port ' + port + '!');
 })
